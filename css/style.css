@@ -29,7 +29,6 @@ ul{
 
     /* Fuente */
     --fuente-principal: "Quicksand", sans-serif;
-    --fuente-titulos: "Marcellus", serif;
 
 }
 
@@ -48,7 +47,7 @@ body{
 /* Header */
 
 h1{
-    font-family: var(--fuente-titulos);
+    font-family: var(--fuente-principal);
     color: var(--color-secundario);
     font-size: 40px;
 }
@@ -88,9 +87,17 @@ h1{
 
 /* main */
 
-.foto-joyas{
+.banner1 img{
+    
+    width: 100%;
+    max-width: 1920px;
+    height: 300px;
+    object-fit: cover;
     
 }
+
+
+
 
 
 
