@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
 /* Normalize */
 
 *{
@@ -5,4 +8,131 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+a{
+    text-decoration: none;
+    color: var(--color-contraste);
+}
+
+ul{
+    list-style: none;
+
+}
+
+/* Variables */
+
+:root{
+    --color-primario: #747264;
+    --color-secundario: #3C3633;
+    --color-terciario: #E0CCBE;
+    --color-contraste: #EEEDEB;
+
+    /* Fuente */
+    --fuente-principal: "Quicksand", sans-serif;
+    --fuente-titulos: "Marcellus", serif;
+
+}
+
+
+
+/* Body */
+
+body{
+    font-family: var(--fuente-principal);
+    background-color: var(--color-terciario);
+    color: var(--color-contraste);
+
+}
+
+
+/* Header */
+
+h1{
+    font-family: var(--fuente-titulos);
+    color: var(--color-secundario);
+    font-size: 40px;
+}
+
+.barranav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    max-width: 1920px;
+    background-color: var(--color-terciario);
+    margin: 0 auto;
+
+    
+}
+
+.barranav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.barranav ul li a:hover{
+    cursor: pointer;
+    color: var(--color-primario);
+    transform: translateY(-5px);
+    transition: 0.3s;
+    
+}
+
+.barranav a i:hover{
+    cursor: pointer;
+    color: var(--color-primario);
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+
+/* main */
+
+.foto-joyas{
+    
+}
+
+
+
+
+/* footer */
+
+footer{
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 15px 15px;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 1920px; 
+    border-radius: 20px 20px 0 0;
+    
+
+}
+
+.footer-redes{
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 15px;
+    gap: 15px
+    
+
+}
+
+.footer-redes a:hover{
+    cursor: pointer;
+    color: var(--color-primario);
+    transform: translateY(-5px);
+    transition: 0.3s;
+    
+}
+
+
+
 
