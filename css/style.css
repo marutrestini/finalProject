@@ -28,6 +28,7 @@ ul{
     --color-contraste: #EEEDEB;
 
     /* Fuente */
+    --fuente-titulo: "Noto Serif SC", serif;
     --fuente-principal: "Quicksand", sans-serif;
 
 }
@@ -47,6 +48,7 @@ ul{
 
 
 /* Fotos tienda */
+
 
 .fotos-tienda{
 
@@ -73,6 +75,44 @@ ul{
     
 }
 
+.card{
+
+    display: flex;
+    flex-flow: column;
+    position: relative;
+
+}
+
+.card a img{
+
+    width: 449px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 100px;
+    
+    
+}
+
+.card a img:hover{
+
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: opacity .0.5s, -webkit-filter .0.5s;
+}
+
+
+.card-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 100%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
 
 
 
@@ -89,9 +129,17 @@ body{
 /* Header */
 
 h1{
-    font-family: var(--fuente-principal);
+    font-family: var(--fuente-titulo);
     color: var(--color-secundario);
     font-size: 40px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .barranav{
@@ -102,7 +150,7 @@ h1{
     max-width: 1920px;
     background-color: var(--color-terciario);
     margin: 0 auto;
- 
+    font-size: 20px;
     
 }
 
@@ -135,6 +183,7 @@ h1{
     max-width: 1920px;
     height: 600px;
     object-fit: cover;
+    margin-bottom: 100px;
     
     
 }
@@ -165,18 +214,18 @@ h1{
     
 }
 
-.tarjetas-img{
+.cards-shop{
 
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    text-align: center;
+    
 }
 
-.tarjetas-img a img{
-    display: flex;
-    height: 500px;
-    width: 500px;
-    flex-flow: column;
-}
+
+
+
+
 
 
 
@@ -191,6 +240,7 @@ h1{
 
 footer{
     background-color: var(--color-secundario);
+    font-size: 15px;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -208,7 +258,7 @@ footer{
 
 .footer-redes{
     display: flex;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 15px;
     gap: 15px
     
