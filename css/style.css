@@ -33,6 +33,39 @@ ul{
 }
 
 
+/* animaciones */
+
+@keyframes titulo-animado{
+    0%{
+        transform: translateX(-100px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/* Fotos tienda */
+
+.fotos-tienda{
+
+    display: flex;
+    flex-flow: column;
+
+
+}
+
+.fotos-tienda a img{
+
+    height: 300px;
+    width: 300px;
+
+
+}
+
+
+
 
 /* Body */
 
@@ -91,10 +124,39 @@ h1{
     
     width: 100%;
     max-width: 1920px;
-    height: 300px;
+    height: 500px;
     object-fit: cover;
     
+    
 }
+
+/* titulo animado */
+
+.titulo-animado{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    font-size: 30px;
+    animation: titulo-animado 1s;
+
+}
+
+.seccion-tienda{
+
+    display: flex;
+    justify-content:space-evenly;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px 15px;
+    text-align: center;
+    
+}
+
+
+
 
 
 
@@ -113,8 +175,6 @@ footer{
     padding: 15px 15px;
     max-width: 1920px;
     margin: 0 auto;
-
-    position: absolute;
     bottom: 0;
     width: 100%;
     max-width: 1920px; 
