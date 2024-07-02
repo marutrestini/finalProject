@@ -64,6 +64,15 @@ ul{
 
 }
 
+.foto-info a:hover{
+
+    cursor: pointer;
+    color: var(--color-primario);
+    transform: translateY(-5px);
+    transition: 1s;
+    
+}
+
 
 
 
@@ -89,11 +98,11 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px;
+    padding: 20px 20px;
     max-width: 1920px;
     background-color: var(--color-terciario);
     margin: 0 auto;
-
+ 
     
 }
 
@@ -124,7 +133,7 @@ h1{
     
     width: 100%;
     max-width: 1920px;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
     
     
@@ -149,10 +158,24 @@ h1{
     justify-content:space-evenly;
     flex-flow: row;
     flex-wrap: wrap;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 40px;
     padding: 15px 15px;
     text-align: center;
     
+}
+
+.tarjetas-img{
+
+    display: flex;
+    flex-flow: column;
+}
+
+.tarjetas-img a img{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    flex-flow: column;
 }
 
 
