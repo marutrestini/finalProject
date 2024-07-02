@@ -223,20 +223,8 @@ header{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer */
+
 
 footer{
     background-color: var(--color-secundario);
@@ -251,7 +239,7 @@ footer{
     bottom: 0;
     width: 100%;
     max-width: 1920px; 
-    border-radius: 20px 20px 0 0;
+    border-radius: 18px 18px 0 0;
     
 
 }
@@ -272,31 +260,3 @@ footer{
     transition: 0.3s;
     
 }
-
-
-/* Media queries */
-
-/* celular */
-
-/* @media (max-width: 480px) { */
-    
-
-
-
-/* tablet */
-
-/* @media (min width: 481px) and (max-width: 768px) {
-
-
-}
-
-
-/* desktop */
-
-/* @media (min width: 769px) {
-
-
-} */ 
-
-
-
